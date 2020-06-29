@@ -1,4 +1,8 @@
-cmake_minimum_required(VERSION 3.5)
+if (APPLE)
+    cmake_minimum_required(VERSION 3.5)
+elseif (Unix)
+    cmake_minimum_required(VERSION 2.8)
+endif ()
 
 project(gen_bip)
 
